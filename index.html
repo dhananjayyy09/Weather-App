@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div>Dhananjay App</div>
+    </header>
+    <div class="container" id="container">
+        <h2>🌤 Weather App</h2>
+        <div id="inputContainer">
+            <input type="text" id="location" placeholder="Enter location...">
+            <button onclick="getWeather()">Get Weather</button>
+            <button onclick="getCurrentLocationWeather()">Use Current Location</button>
+        </div>
+        <div class="weather-info hidden" id="weatherInfo">
+            <button class="close-btn" onclick="closeWeather()">✖</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
